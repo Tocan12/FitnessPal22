@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="653.0" prefWidth="842.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesspal.WorkoutExercisesController">
+    <children>
+        <AnchorPane prefHeight="546.0" prefWidth="253.0">
+            <children>
+                <Button fx:id="btn_addExercise" layoutX="14.0" layoutY="334.0" mnemonicParsing="false" onAction="#AddExercise" prefHeight="26.0" prefWidth="169.0" text="ADD" />
+                <Button fx:id="btn_updateExercise" layoutX="13.0" layoutY="403.0" mnemonicParsing="false" onAction="#UpdateExercise" prefHeight="26.0" prefWidth="170.0" text="UPDATE" />
+                <Button fx:id="btn_deleteExercise" layoutX="16.0" layoutY="462.0" mnemonicParsing="false" onAction="#DeleteExercise" prefHeight="26.0" prefWidth="170.0" text="DELETE" textFill="#080000" />
+                <TextField fx:id="txt_exerciseName" layoutX="25.0" layoutY="60.0" promptText="Exercise Name" />
+                <TextField fx:id="txt_sets" layoutX="25.0" layoutY="108.0" promptText="Sets" />
+                <TextField fx:id="txt_reps" layoutX="25.0" layoutY="162.0" promptText="Reps" />
+                <TextField fx:id="txt_idExercise" layoutX="24.0" layoutY="14.0" promptText="ID (DELETE/UPDATE)" />
+                <ComboBox fx:id="combo_workouts" layoutX="23.0" layoutY="498.0" prefWidth="150.0" promptText="Workouts" />
+            </children>
+        </AnchorPane>
+        <TableView fx:id="table_exercises" layoutX="200.0" layoutY="85.0" prefHeight="441.0" prefWidth="546.0">
+            <columns>
+                <TableColumn fx:id="col_idExercise" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="col_exerciseName" prefWidth="104.20001220703125" text="Exercise Name" />
+                <TableColumn fx:id="col_sets" prefWidth="79.79998779296875" text="Sets" />
+                <TableColumn fx:id="col_reps" prefWidth="81.39996337890625" text="Reps" />
+            </columns>
+        </TableView>
+        <TextField fx:id="filterFieldExercise" layoutX="377.0" layoutY="36.0" promptText="Search" />
+        <TextField fx:id="txt_workoutName" layoutX="24.0" layoutY="546.0" promptText="Workout Name" />
+        <Button fx:id="btn_createWorkout" layoutX="59.0" layoutY="590.0" mnemonicParsing="false" onAction="#AddExerciseToWorkout" text="Create Workout" />
+        <Button fx:id="btn_workouts" layoutX="518.0" layoutY="590.0" mnemonicParsing="false" text="See Your Workouts!" />
+    </children>
+</AnchorPane>

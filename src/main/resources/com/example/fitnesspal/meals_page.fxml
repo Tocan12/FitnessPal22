@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesspal.MealsController">
+    <children>
+        <TableView fx:id="tableMeals" layoutX="65.0" layoutY="47.0" prefHeight="200.0" prefWidth="470.0">
+            <columns>
+                <TableColumn fx:id="colMealId" prefWidth="75.0" text="Meal ID" />
+                <TableColumn fx:id="colMealName" prefWidth="150.0" text="Meal Name" />
+                <TableColumn fx:id="colTotalCalories" prefWidth="150.0" text="Total Calories" />
+            </columns>
+        </TableView>
+        <Button layoutX="300.0" layoutY="283.0" onAction="#deleteMeal" style="-fx-background-color: #9932cc;" text="Delete Selected Meal" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="21.0" />
+         </font></Button>
+      <Button fx:id="btn_back" layoutX="65.0" layoutY="283.0" onAction="#deleteMeal" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #9932cc;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="21.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

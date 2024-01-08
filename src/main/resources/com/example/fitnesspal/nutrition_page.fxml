@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="653.0" prefWidth="842.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesspal.NutritionController">
+   <children>
+      <AnchorPane prefHeight="546.0" prefWidth="253.0">
+         <children>
+            <Button fx:id="btn_add" layoutX="14.0" layoutY="334.0" mnemonicParsing="false" onAction="#Add_food" prefHeight="26.0" prefWidth="169.0" style="-fx-background-color: #9932cc;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="16.0" />
+               </font></Button>
+            <Button fx:id="btn_food" layoutX="13.0" layoutY="391.0" mnemonicParsing="false" onAction="#UpdateFood" prefHeight="26.0" prefWidth="170.0" style="-fx-background-color: #9932cc;" text="UPDATE" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font></Button>
+            <Button fx:id="btn_delete" layoutX="13.0" layoutY="445.0" mnemonicParsing="false" onAction="#DeleteFood" prefHeight="26.0" prefWidth="170.0" style="-fx-background-color: #9932cc;" text="DELETE" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font></Button>
+            <TextField fx:id="txt_food" layoutX="25.0" layoutY="60.0" promptText="Food Name" />
+            <TextField fx:id="txt_cal" layoutX="25.0" layoutY="108.0" promptText="KCAL/100G" />
+            <TextField fx:id="txt_protein" layoutX="27.0" layoutY="162.0" promptText="PROTEIN" />
+            <TextField fx:id="txt_carbs" layoutX="28.0" layoutY="217.0" promptText="CARBS" />
+            <TextField fx:id="txt_fat" layoutX="29.0" layoutY="273.0" promptText="FAT" />
+            <TextField fx:id="txt_id" layoutX="24.0" layoutY="14.0" promptText="ID(DELETE/UPDATE" />
+            <ComboBox fx:id="combo_meals" layoutX="23.0" layoutY="506.0" prefWidth="150.0" promptText="               Meals" style="-fx-background-color: lightblue;" />
+         </children></AnchorPane>
+      <TableView fx:id="table_food" layoutX="200.0" layoutY="85.0" prefHeight="441.0" prefWidth="546.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="col_food" prefWidth="104.20001220703125" text="FOOD NAME" />
+            <TableColumn fx:id="col_cal" prefWidth="79.79998779296875" text="KCAL/100G" />
+            <TableColumn fx:id="col_prot" prefWidth="81.39996337890625" text="PROTEIN" />
+            <TableColumn fx:id="col_carbs" prefWidth="77.0" text="CARBS" />
+            <TableColumn fx:id="col_fat" prefWidth="129.60003662109375" text="FAT" />
+        </columns>
+         
+      </TableView>
+      <TextField fx:id="filterField" layoutX="377.0" layoutY="36.0" promptText="Search" />
+      <TextField fx:id="txt_mealName" layoutX="24.0" layoutY="556.0" promptText="Meal Name" />
+      <Button fx:id="btn_createMeal" layoutX="59.0" layoutY="590.0" mnemonicParsing="false" onAction="#Add_food_to_meal" style="-fx-background-color: #9932cc;" text="Create Meal" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="17.0" />
+         </font></Button>
+      <Button fx:id="btn_meals" layoutX="518.0" layoutY="590.0" mnemonicParsing="false" style="-fx-background-color: #9932cc;" text="See Your Meals!" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="21.0" />
+         </font></Button>
+      <Button fx:id="btn_back" layoutX="301.0" layoutY="590.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="108.0" style="-fx-background-color: #9932cc;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="21.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

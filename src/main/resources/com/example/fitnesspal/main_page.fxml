@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="617.0" prefWidth="762.0" style="-fx-background-color: #9932cc;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesspal.MainPageController">
+   <children>
+      <Label fx:id="lb_user" layoutX="190.0" layoutY="54.0" prefHeight="50.0" prefWidth="382.0" text="      Welcome to FitnessPal, user!" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_profile" layoutX="93.0" layoutY="393.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Press me!" textFill="DARKORCHID">
+         <font>
+            <Font name="Rockwell Italic" size="16.0" />
+         </font></Button>
+      <Button fx:id="btn_nutrition" layoutX="289.0" layoutY="393.0" mnemonicParsing="false" style="-fx-background-color: white;" text="You should press me!" textFill="DARKORCHID">
+         <font>
+            <Font name="Rockwell Italic" size="17.0" />
+         </font></Button>
+      <Button fx:id="btn_fitness" layoutX="541.0" layoutY="392.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Try not to press me!" textFill="DARKORCHID">
+         <font>
+            <Font name="Rockwell Italic" size="17.0" />
+         </font></Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="271.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo-fit.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="339.0" layoutY="344.0" text="Nutrition" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="22.0" />
+         </font></Label>
+      <Label layoutX="106.0" layoutY="347.0" text="Profile" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="22.0" />
+         </font></Label>
+      <Label layoutX="594.0" layoutY="344.0" text="Fitness" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="22.0" />
+         </font></Label>
+      <Label layoutX="547.0" layoutY="442.0" text="Work in progress" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_logout" layoutX="579.0" layoutY="208.0" mnemonicParsing="false" style="-fx-background-color: white;" text="LOG OUT!" textFill="#00b9bc">
+         <font>
+            <Font name="Bauhaus 93" size="17.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

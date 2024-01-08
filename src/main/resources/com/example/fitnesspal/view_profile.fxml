@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="496.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesspal.ProfileController">
+
+    <center>
+        <VBox alignment="CENTER" prefHeight="364.0" prefWidth="252.0" spacing="10">
+            <Label styleClass="header-label" text="Profile Information" textFill="#19c4b0">
+            <font>
+               <Font name="Bauhaus 93" size="66.0" />
+            </font></Label>
+
+            <HBox spacing="10">
+                <Label text="Full Name:" />
+                <Label fx:id="labelFullName" />
+            </HBox>
+
+            <HBox spacing="10">
+                <Label text="Gender:" />
+                <Label fx:id="labelGender" />
+            </HBox>
+
+            <HBox spacing="10">
+                <Label text="Birthdate:" />
+                <Label fx:id="labelBirthdate" />
+            </HBox>
+
+            <HBox spacing="10">
+                <Label text="Height:" />
+                <Label fx:id="labelHeight" />
+            </HBox>
+
+            <HBox spacing="10">
+                <Label text="Weight:" />
+                <Label fx:id="labelWeight" />
+            </HBox>
+
+            <!-- Button to delete profile -->
+            <Button fx:id="btnDeleteProfile" text="Delete Profile">
+            <font>
+               <Font name="Bauhaus 93" size="19.0" />
+            </font></Button>
+         <Button fx:id="btn_back" layoutX="101.0" layoutY="264.0" text="BACK">
+            <font>
+               <Font name="Bauhaus 93" size="20.0" />
+            </font></Button>
+        </VBox>
+    </center>
+
+</BorderPane>

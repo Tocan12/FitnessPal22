@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9932cc;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesspal.HelloController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="14.0" layoutY="150.0" text="USERNAME" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="146.0" fitWidth="200.0" layoutX="2.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Logo-fit.png" />
+               </image></ImageView>
+            <TextField fx:id="tf_username" layoutX="27.0" layoutY="174.0" />
+            <PasswordField fx:id="tf_password" layoutX="26.0" layoutY="232.0" />
+            <Label layoutX="14.0" layoutY="206.0" prefHeight="26.0" prefWidth="103.0" text="PASSWORD" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_login" layoutX="75.0" layoutY="270.0" mnemonicParsing="false" text="LOGIN" />
+            <Label layoutX="27.0" layoutY="304.0" text="Not a user? " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_sign_up" layoutX="111.0" layoutY="302.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="SIGN UP!" textFill="#07bfa9" underline="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
